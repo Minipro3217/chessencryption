@@ -99,3 +99,17 @@ def encode(file_path: str):
 
     # return pgn string
     return "\n\n".join(output_pgns)
+file_path=r'G:\SystemDocuments\GitHubRepositories\chessencryption\preincryption.txt'
+
+encode(file_path)
+# Call the encode function
+output_pgn = encode(file_path)
+
+# Specify the output file path
+output_file_path = r'G:\SystemDocuments\GitHubRepositories\chessencryption\output.pgn'
+
+# Write the output to a file
+with open(output_file_path, 'w') as output_file:
+    output_file.write(output_pgn)
+
+print(f"PGN output saved to {output_file_path}")
