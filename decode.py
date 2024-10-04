@@ -83,3 +83,13 @@ def decode(pgn_string: str, output_file_path: str):
         + f"{len(games)} game(s), {total_move_count} total move(s)"
         + f"({round(time() - start_time, 3)}s)."
     )
+# Define file paths
+pgn_input_path = r'G:\SystemDocuments\GitHubRepositories\chessencryption\output.pgn'
+output_path = r'G:\SystemDocuments\GitHubRepositories\chessencryption\decodeoutput.txt'
+
+# Read the PGN from the input file
+with open(pgn_input_path, 'r') as pgn_file:
+    pgn_string = pgn_file.read()
+
+# Call the decode function
+decode(pgn_string, output_path)
