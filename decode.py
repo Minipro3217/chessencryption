@@ -84,8 +84,8 @@ def decode(pgn_string: str, output_file_path: str):
         + f"({round(time() - start_time, 3)}s)."
     )
 # Define file paths
-pgn_input_path = r'G:\SystemDocuments\GitHubRepositories\chessencryption\output.pgn'
-output_path = r'G:\SystemDocuments\GitHubRepositories\chessencryption\decodeoutput.txt'
+pgn_input_path = r'output.pgn'
+output_path = r'decodeoutput.txt'
 
 # Read the PGN from the input file
 with open(pgn_input_path, 'r') as pgn_file:
